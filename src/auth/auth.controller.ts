@@ -6,6 +6,6 @@ export class AuthController {
     constructor(private authService: AuthService) {}
     @Post('/')
     authFunction() {
-      return this.authService  
+      return this.authService.UserAuthentication();
     }
 }
